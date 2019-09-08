@@ -60,7 +60,8 @@ public class BulletListItemSpan implements LeadingMarginSpan {
 
             final int side = theme.getBulletWidth(textLineHeight);
 
-            final int marginLeft = (width - side) / 2;
+            // remove leading indentation
+            final int marginLeft = 0;
 
             // @since 2.0.2
             // There is a bug in Android Nougat, when this span receives an `x` that

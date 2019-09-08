@@ -98,11 +98,12 @@ public class OrderedListItemSpan implements LeadingMarginSpan {
             margin = 0;
         }
 
+        // remove leading indentation
         final int left;
         if (dir > 0) {
-            left = x + (width * dir) - numberWidth;
+            left = x; // + (width * dir) - numberWidth;
         } else {
-            left = x + (width * dir) + (width - numberWidth);
+            left = x; // + (width * dir) + (width - numberWidth);
         }
 
         // @since 1.1.1 we are using `baseline` argument to position text
