@@ -107,7 +107,7 @@ public class CoreActivity extends Activity {
      */
     private void step_4() {
 
-        final String markdown = "This **is** pre-parsed [markdown](#)\n * red\n    + first\n     + second\n * blue\n * white\n" +
+        final String markdown = "This **is** pre-parsed [markdown](#)\n # header 1\n * red\n    + first\n     + second\n * blue\n * white\n" +
                 "1. test1\n 2. test2\n 3. test3";
 
         final Markwon markwon = Markwon.create(this);
